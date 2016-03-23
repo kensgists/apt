@@ -1,0 +1,213 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    margin: 15px;
+}
+.info {
+    max-width: 1024px;
+}
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    border: 0; padding: 0;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Collapsible Notes styles */
+.collapsible-note {
+    display: block;
+    font-weight: normal;
+    color: #2e6da4;
+}
+.collapsible {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid transparent;
+    border-color: #2e6da4;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0;
+    display: none;
+}
+.collapsible-note button {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.collapsible-note button:hover,
+.collapsible-note button:focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+    text-decoration: none;
+    outline: none;
+}
+.collapsible-note button::-moz-focus-inner {
+    border: 0;
+}
+
+/* for pills */
+[class^="pill-"], [class*=" pill-"] {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background-color: #fff;
+}
+.pill-spec {
+    border-color: #2e6da4;
+    color: #2e6da4;
+}
+.pill-spec a, .pill-spec a:visited {
+    text-decoration: none;
+    color: #2e6da4;
+}
+.pill-tag {
+    border-color: #333;
+    color: #333;
+}
+.pill-priority-one {
+    border-color: #CF000F;
+    color: #CF000F;
+    background-color: #ebc6c9;
+}
+.pill-priority-two {
+    border-color: #34495e;
+    color: #34495e;
+    background-color: #c4dffb;
+}
+.pill-priority-three {
+    border-color: #406F0A;
+    color: #406F0A;
+    background-color: #e1ebd5;
+}
+.pill-priority-four {
+    border-color: #444;
+    color: #444;
+    background-color: #eee;
+}
+
+/* For icon fonts */
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?7h0cje');
+    src:    url('fonts/icomoon.eot?7h0cje#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?7h0cje') format('truetype'),
+            url('fonts/icomoon.woff?7h0cje') format('woff'),
+            url('fonts/icomoon.svg?7h0cje#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.5em;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-partial:before {
+    content: "\e900";
+}
+.icon-unknown:before {
+    content: "\e901";
+}
+.icon-supported:before {
+    content: "\e902";
+}
+.icon-notsupported:before {
+    content: "\e903";
+}
+
+/* Matrix styles */
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #aaa;
+}
+th {
+    padding: 8px;
+}
+td {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px;
+}
+.row {
+    text-align: left;
+    font-size: 1em;
+}
+caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.vendor a {
+    color: #333;
+}
+.criterion,
+.vendor {
+    width: 200px;
+    padding: 8px;
+}
+.header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* support styles */
+.unknown {
+    background:#f9690e;
+    color: #802200;
+}
+.supported {
+    background:#64AE11;
+    color: #2b390e;
+}
+.partial {
+    background:#22A7F0;
+    color: #34495e;
+}
+.na {
+    background:#BDC3C7;
+    color: #3e3e3e;
+}
+.notsupported {
+    background:#CF000F;
+    color: #360000;
+}
+.levels {
+    display: inline-block;
+    padding: 2px 4px;
+    font-weight: bold;
+}
